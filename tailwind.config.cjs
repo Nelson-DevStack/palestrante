@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         mainColor: "#E59E57",
       },
+      backgroundImage: {
+        mainColorBg: "url('./src/assets/bg3.svg')",
+      },
     },
   },
   plugins: [],
