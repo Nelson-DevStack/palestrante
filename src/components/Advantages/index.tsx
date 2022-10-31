@@ -38,11 +38,6 @@ const AdvantagesSection = () => {
   return (
     <section className="">
       <Container className="bg-mainColorBg bg-cover py-20">
-        {/* <img
-          src={bg}
-          alt="Ilustração de Fundo"
-          className="absolute w-full h-full"
-        /> */}
         <div className="flex flex-col justify-center md:items-center gap-5 md:grid md:grid-cols-2 md:gap-28">
           <div>
             {/* <p>Image Area</p> */}
