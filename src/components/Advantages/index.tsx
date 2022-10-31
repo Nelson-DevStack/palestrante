@@ -36,11 +36,10 @@ const AdvantagesSection = () => {
   ];
 
   return (
-    <section className="">
+    <section className="py-10">
       <Container className="bg-mainColorBg bg-cover py-20">
         <div className="flex flex-col justify-center md:items-center gap-5 md:grid md:grid-cols-2 md:gap-28">
           <div>
-            {/* <p>Image Area</p> */}
             <img
               src={advantageImg}
               alt="Vantagens do Curso"
