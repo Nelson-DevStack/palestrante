@@ -1,15 +1,81 @@
+import { useEffect, useState } from "react";
+import { HiMenu } from "react-icons/hi";
+
 import Container from "../UIComponents/Container";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const handleMenuClick = () => {
+    setIsOpen(!isOpen);
+  };
+  const handleScroll = () => {
+    if (window.scrollY > 80) {
+      setScrolled(true);
+    } else {
+      setScrolled(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= 90) {
+        return setScrolled(true);
+      }
+      return setScrolled(false);
+    });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="bg-gray-900 h-20">
+    <header
+      className={`bg-transparent z-20 fixed w-full h-20 transition duration-300 border-b border-transparent ${
+        scrolled ? "bg-slate-50 shadow-md border-gray-200" : "bg-transparent"
+      } ${isOpen ? "bg-mainColor/90 backdrop-blur" : ""}`}
+    >
       <Container className="h-full">
         <nav className="h-full flex items-center justify-between">
-          <a href="/" className="text-xl text-slate-50">
+          <a href="/" className="text-xl text-gray-900">
             Marcos Oliveira
           </a>
 
-          <ul className="gap-4 text-slate-100 hidden md:flex">
+          <button
+            type="button"
+            className="text-gray-800 text-3xl md:hidden"
+            onClick={handleMenuClick}
+          >
+            <HiMenu />
+          </button>
+
+          <ul
+            className={`
+              gap-4
+              md:gap-6
+              text-gray-800
+              w-[90%]
+              bg-mainColor/90
+              backdrop-blur
+              fixed
+              flex
+              flex-col
+              top-20
+              right-0
+              p-4
+              h-full
+              transition
+              duration-300
+              
+              md:static 
+              md:flex-row 
+              md:h-auto 
+              md:bg-transparent 
+              md:backdrop-blur-none
+              md:w-auto
+              md:translate-x-0
+              ${isOpen ? "translate-x-0" : "translate-x-full"}`}
+          >
             <li>
               <a href="/">Home</a>
             </li>

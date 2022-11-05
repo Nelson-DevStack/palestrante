@@ -16,7 +16,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative">
+    <section className="relative" id="home">
       <img
         src={bg}
         alt="Asset"
@@ -37,7 +37,7 @@ const Hero = () => {
 
             <button
               type="button"
-              className="py-2 px-5 bg-mainColor mt-5 uppercase text-gray-900 transition duration-300 font-semibold hover:scale-105 rounded-sm tracking-wide"
+              className="py-2 px-5 bg-mainColor mt-5 uppercase text-gray-800 transition duration-300 font-semibold hover:scale-105 rounded-sm tracking-wide"
               style={{
                 boxShadow: !isHovering
                   ? "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
