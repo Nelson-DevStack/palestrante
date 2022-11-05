@@ -9,7 +9,7 @@ const Navbar = () => {
             Marcos Oliveira
           </a>
 
-          <ul className="flex gap-4 text-slate-100">
+          <ul className="gap-4 text-slate-100 hidden md:flex">
             <li>
               <a href="/">Home</a>
             </li>
