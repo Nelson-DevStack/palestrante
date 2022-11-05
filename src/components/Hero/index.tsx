@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import bg from "../../assets/bg.svg";
 import heroImg from "../../assets/lecture.jpg";
 import pattern from "../../assets/pattern.svg";
@@ -7,15 +5,6 @@ import CTABtn from "../Button";
 import Container from "../UIComponents/Container";
 
 const Hero = () => {
-  const [isHovering, setIsHovering] = useState(false);
-  const handleMouseEnter = () => {
-    setIsHovering(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovering(false);
-  };
-
   return (
     <section className="relative" id="home">
       <img

@@ -10,7 +10,7 @@ import TestimonialsSection from "./components/Testimonials";
 
 function App() {
   return (
-    <div>
+    <main>
       <Navbar />
       <Hero />
       <SocialProof />
@@ -19,7 +19,7 @@ function App() {
       <TestimonialsSection />
       <AboutSection />
       <Footer />
-    </div>
+    </main>
   );
 }
 

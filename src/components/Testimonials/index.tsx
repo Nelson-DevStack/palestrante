@@ -1,4 +1,6 @@
+import abstractPattern from "../../assets/blur-abstract-pattern.svg";
 import profilePic from "../../assets/profile-pic.jpg";
+import roundedPattern from "../../assets/rounded-abstract-pattern.svg";
 import CTABtn from "../Button";
 import Container from "../UIComponents/Container";
 
@@ -54,7 +56,17 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-20" id="depoimentos">
+    <section className="py-20 relative" id="depoimentos">
+      <img
+        src={abstractPattern}
+        alt="Ilustração"
+        className="absolute -z-10 -left-24 -top-12 md:-left-[20vw] md:-mt-96 opacity-60"
+      />
+      <img
+        src={roundedPattern}
+        alt="Ilustração"
+        className="absolute -z-10 -right-[50vw] mt-24 md:-right-[550px] opacity-60"
+      />
       <Container>
         <div>
           <div className="mb-24 text-center">

@@ -1,5 +1,7 @@
+import { useEffect, useState } from "react";
 import { GoPlus } from "react-icons/go";
 
+import blurPattern from "../../assets/blur-pattern-2.svg";
 import Container from "../UIComponents/Container";
 
 type SocialProofType = {
@@ -37,8 +39,36 @@ const SocialProof = () => {
     },
   ];
 
+  const [scrolled, setScrolled] = useState(false);
+  const handleScroll = () => {
+    if (window.scrollY > 80) {
+      setScrolled(true);
+    } else {
+      setScrolled(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= 90) {
+        return setScrolled(true);
+      }
+      return setScrolled(false);
+    });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section>
+      <img
+        src={blurPattern}
+        alt="Padrão de Ilustração"
+        className={`absolute w-[500px] h-auto -left-[50vw] md:-left-48 -mt-20 md:-mt-32 -z-20 transition transition-all duration-500 ${
+          scrolled ? "opacity-50" : "opacity-20"
+        }`}
+      />
       <Container>
         <div>
           <h2 className="text-3xl text-center font-medium">
