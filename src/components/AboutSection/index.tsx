@@ -1,6 +1,7 @@
 import { ImQuotesLeft } from "react-icons/im";
 
-import aboutImg from "../../assets/palestrante.jpg";
+import aboutImg from "../../assets/palestrante-bg.png";
+import CTABtn from "../Button";
 import Container from "../UIComponents/Container";
 
 const AboutSection = () => {
@@ -35,17 +36,19 @@ const AboutSection = () => {
                 Harvard, Yale University e Stanford University.
               </p>
 
-              <div className="flex gap-2">
+              <div className="flex gap-2 max-w-sm mt-10">
                 <span className="text-mainColor text-xl">
                   <ImQuotesLeft />
                 </span>
-                <p className="text-lg text-gray-800 font-medium">
+                <p className="text-xl text-gray-800 font-medium">
                   A comunicação não se trata só de falar, é a arte de ver, ouvir
                   e fazer entender.
                 </p>
               </div>
 
-              <button type="button">Participar</button>
+              <div className="mt-5">
+                <CTABtn />
+              </div>
             </div>
           </div>
         </div>

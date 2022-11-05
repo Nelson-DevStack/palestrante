@@ -1,4 +1,5 @@
 import profilePic from "../../assets/profile-pic.jpg";
+import CTABtn from "../Button";
 import Container from "../UIComponents/Container";
 
 type Testimonial = {
@@ -76,7 +77,9 @@ const TestimonialsSection = () => {
             ))}
           </div>
 
-          <button type="button">Participar</button>
+          <div className="flex justify-center mt-10">
+            <CTABtn />
+          </div>
         </div>
       </Container>
     </section>

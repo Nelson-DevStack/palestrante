@@ -2,6 +2,7 @@ import React from "react";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 
 import advantageImg from "../../assets/meeting.jpg";
+import CTABtn from "../Button";
 import Container from "../UIComponents/Container";
 
 type AdvantageListItem = {
@@ -57,7 +58,7 @@ const AdvantagesSection = () => {
               ))}
             </ul>
 
-            <button type="button">Quero participar</button>
+            <CTABtn />
           </div>
         </div>
       </Container>

@@ -1,4 +1,5 @@
 import formImg from "../../assets/arte-da-oratoria.png";
+import CTABtn from "../Button";
 import Container from "../UIComponents/Container";
 
 const FormSection = () => {
@@ -39,7 +40,7 @@ const FormSection = () => {
                 />
               </label>
 
-              <button type="button">Participar</button>
+              <CTABtn />
             </form>
           </div>
 

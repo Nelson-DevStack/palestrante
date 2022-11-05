@@ -3,6 +3,7 @@ import { useState } from "react";
 import bg from "../../assets/bg.svg";
 import heroImg from "../../assets/lecture.jpg";
 import pattern from "../../assets/pattern.svg";
+import CTABtn from "../Button";
 import Container from "../UIComponents/Container";
 
 const Hero = () => {
@@ -35,19 +36,7 @@ const Hero = () => {
               oportunidades.
             </p>
 
-            <button
-              type="button"
-              className="py-2 px-5 bg-mainColor mt-5 uppercase text-gray-800 transition duration-300 font-semibold hover:scale-105 rounded-sm tracking-wide"
-              style={{
-                boxShadow: !isHovering
-                  ? "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
-                  : "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px",
-              }}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              participar
-            </button>
+            <CTABtn />
           </div>
 
           <div className="relative">
