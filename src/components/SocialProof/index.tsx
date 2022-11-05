@@ -47,7 +47,11 @@ const SocialProof = () => {
 
           <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-20 mt-6 mb-16">
             {socialProofInfo.map((info) => (
-              <SocialCard number={info.number} text={info.text} />
+              <SocialCard
+                key={info.text}
+                number={info.number}
+                text={info.text}
+              />
             ))}
           </div>
         </div>

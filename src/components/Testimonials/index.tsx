@@ -45,9 +45,9 @@ const TestimonialsSection = () => {
     },
     {
       image: profilePic,
-      alt: "João Gomes, Vendedor",
-      name: "João Gomes",
-      job: "Vendedor",
+      alt: "Márcio Correia, Empreendedor",
+      name: "Márcio Correia",
+      job: "Empreendedor",
       text: "Nunca tive coragem de falar em público antes. Tudo mudou quando decidi assistir a palestra do Marcos Oliveira. Percebi que toda pessoa tem dentro de si o poder de fazer a diferença através da oratória.",
     },
   ];
@@ -66,6 +66,7 @@ const TestimonialsSection = () => {
             {/* Card */}
             {testimonials.map((testimonial) => (
               <TestimonialCard
+                key={testimonial.name}
                 image={testimonial.image}
                 alt={testimonial.alt}
                 name={testimonial.name}
