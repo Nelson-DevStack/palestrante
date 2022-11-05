@@ -32,7 +32,7 @@ const AdvantagesSection = () => {
       text: "Impulsionar suas relações e Networking",
     },
     {
-      text: "Export suas ideias sem medo de ser julgado",
+      text: "Expor suas ideias sem medo de ser julgado",
     },
   ];
 

@@ -65,8 +65,8 @@ const SocialProof = () => {
       <img
         src={blurPattern}
         alt="Padrão de Ilustração"
-        className={`absolute w-[500px] h-auto -left-[50vw] md:-left-48 -mt-20 md:-mt-32 -z-20 transition transition-all duration-500 ${
-          scrolled ? "opacity-50" : "opacity-20"
+        className={`absolute w-[500px] h-auto -left-[50vw] md:-left-48 -mt-20 md:-mt-48 -z-20 transition transition-opacity duration-500 ${
+          scrolled ? "opacity-80" : "opacity-80"
         }`}
       />
       <Container>

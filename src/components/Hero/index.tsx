@@ -12,7 +12,7 @@ const Hero = () => {
         alt="Asset"
         className="absolute -z-10 right-0 opacity-30 max-w-[900px] md:max-w-[800px]"
       />
-      <Container className="py-10 py-28">
+      <Container className="py-28 lg:py-[12.5rem] lg:py-[11.4vw]">
         <div className="grid md:grid-cols-2 gap-10 items-center md:justify-between">
           <div className="max-w-xl">
             <h1 className="text-3xl font-medium text-gray-900">

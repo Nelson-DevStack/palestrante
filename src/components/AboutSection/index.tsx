@@ -6,7 +6,7 @@ import Container from "../UIComponents/Container";
 
 const AboutSection = () => {
   return (
-    <section id="sobre">
+    <section id="sobre" className="mt-20">
       <Container>
         <div className="grid md:grid-cols-2 gap-10">
           <div>

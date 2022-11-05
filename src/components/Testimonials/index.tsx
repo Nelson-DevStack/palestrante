@@ -20,7 +20,7 @@ const TestimonialCard: React.FC<Testimonial> = ({
   text,
 }) => {
   return (
-    <div className="border border-gray-200 rounded-md transition duration-200 hover:shadow-xl hover:border hover:border-gray-200">
+    <div className="border border-gray-400 rounded-md transition duration-200 hover:shadow-xl">
       <div className="p-8">
         <img
           src={image}
@@ -29,7 +29,7 @@ const TestimonialCard: React.FC<Testimonial> = ({
         />
         <p className="mt-4 text-gray-800 text-[1.1em]">{text}</p>
       </div>
-      <div className="border-t border-gray-200 p-4 flex flex-col items-center justify-center ">
+      <div className="border-t border-gray-300 p-4 flex flex-col items-center justify-center ">
         <h3 className="uppercase text-yellow-700 font-semibold">{name}</h3>
         <p className="text-sm">{job}</p>
       </div>
@@ -60,12 +60,12 @@ const TestimonialsSection = () => {
       <img
         src={abstractPattern}
         alt="Ilustração"
-        className="absolute -z-10 -left-24 -top-12 md:-left-[20vw] md:-mt-96 opacity-60"
+        className="absolute -z-10 -left-24 -top-12 md:-left-[350px] md:-mt-56 md:top-0 opacity-60"
       />
       <img
         src={roundedPattern}
         alt="Ilustração"
-        className="absolute -z-10 -right-[50vw] mt-24 md:-right-[550px] opacity-60"
+        className="absolute -z-10 -right-[50vw] mt-24 md:-right-[550px] opacity-20 md:opacity-60"
       />
       <Container>
         <div>
