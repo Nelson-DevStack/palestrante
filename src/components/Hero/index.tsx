@@ -1,6 +1,7 @@
 import bg from "../../assets/bg.svg";
 import heroImg from "../../assets/lecture.jpg";
 import pattern from "../../assets/pattern.svg";
+import blurPattern from "../../assets/rounded-abstract-pattern.svg";
 import CTABtn from "../Button";
 import Container from "../UIComponents/Container";
 
@@ -8,9 +9,10 @@ const Hero = () => {
   return (
     <section className="relative" id="home">
       <img
-        src={bg}
+        src={blurPattern}
         alt="Asset"
-        className="absolute -z-10 right-0 opacity-30 max-w-[900px] md:max-w-[800px]"
+        // className="absolute -z-10 right-0 opacity-30 max-w-[900px] md:max-w-[800px]"
+        className="absolute -z-10 -right-52 opacity-60 -top-48 max-w-[900px] md:max-w-[800px] lg:max-w-6xl w-full"
       />
       <Container className="py-28 lg:py-[12.5rem] lg:py-[11.4vw]">
         <div className="grid md:grid-cols-2 gap-10 items-center md:justify-between">
