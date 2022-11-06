@@ -7,7 +7,7 @@ import Container from "../UIComponents/Container";
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="pt-20 bg-slate-100">
+    <section id="sobre" className="py-10 md:py-0 md:pt-20 bg-slate-100">
       <Container>
         <div className="grid md:grid-cols-2 gap-10">
           <div>
@@ -50,7 +50,7 @@ const AboutSection = () => {
                 </p>
               </div>
 
-              <div className="mt-5">
+              <div className="mt-5 flex justify-center md:justify-start">
                 <CTABtn />
               </div>
             </div>

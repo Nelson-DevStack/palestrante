@@ -66,7 +66,7 @@ const TestimonialsSection = () => {
       <img
         src={roundedPattern}
         alt="Ilustração"
-        className="absolute z-10 -right-[50vw] mt-24 md:-right-[550px] opacity-20 md:opacity-40"
+        className="absolute z-10 -right-[50vw] mt-24 md:-right-[550px] opacity-20 md:opacity-30"
       />
       <Container>
         <div>
