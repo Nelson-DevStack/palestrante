@@ -9,6 +9,9 @@ module.exports = {
       backgroundImage: {
         mainColorBg: "url('./src/assets/bg3.svg')",
       },
+      fontFamily: {
+        customSerif: ["Bodoni Nova"],
+      },
     },
   },
   plugins: [],

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { HiMenu } from "react-icons/hi";
+import { Link } from "react-scroll";
 
 import Container from "../UIComponents/Container";
 
@@ -29,6 +30,34 @@ const Navbar = () => {
     };
   }, []);
 
+  const navbarLinks = [
+    {
+      to: "home",
+      label: "Home",
+      offset: null,
+    },
+    {
+      to: "vantagens",
+      label: "Vantagens",
+      offset: -40,
+    },
+    {
+      to: "participe",
+      label: "Participar",
+      offset: -70,
+    },
+    {
+      to: "depoimentos",
+      label: "Depoimentos",
+      offset: -40,
+    },
+    {
+      to: "sobre",
+      label: "Sobre",
+      offset: null,
+    },
+  ];
+
   return (
     <header
       className={`bg-transparent z-20 fixed w-full h-20 transition duration-300 border-b border-transparent ${
@@ -37,7 +66,7 @@ const Navbar = () => {
     >
       <Container className="h-full">
         <nav className="h-full flex items-center justify-between">
-          <a href="/" className="text-xl text-gray-900">
+          <a href="/" className="text-2xl text-gray-900 font-customSerif">
             Marcos Oliveira
           </a>
 
@@ -76,7 +105,7 @@ const Navbar = () => {
               md:translate-x-0
               ${isOpen ? "translate-x-0" : "translate-x-full"}`}
           >
-            <li>
+            {/* <li>
               <a href="/">Home</a>
             </li>
             <li>
@@ -90,7 +119,23 @@ const Navbar = () => {
             </li>
             <li>
               <a href="/">Sobre</a>
-            </li>
+            </li> */}
+            {navbarLinks.map((link) => (
+              <li
+                key={link.to}
+                className="transition duration-200 hover:scale-105 "
+              >
+                <Link
+                  className="flex gap-2 transition duration-200 cursor-pointer border-b border-transparent hover:border-gray-800 font-gray-900"
+                  to={link.to}
+                  offset={link.offset ? link.offset : 0}
+                  smooth
+                  spy
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
       </Container>

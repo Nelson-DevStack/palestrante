@@ -2,14 +2,14 @@ import Container from "../UIComponents/Container";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-gray-900 text-slate-50 py-5">
+    <footer className="w-full bg-[#212121] text-slate-50 py-5">
       <Container>
         <div>
           <div>
-            <h3 className="text-xl">Marcos Oliveira</h3>
+            <h3 className="text-2xl font-customSerif">Marcos Oliveira</h3>
             <p className="text-base font-light">
-              A comunicação não é só falar, é a arte de ver, ouvir e fazer
-              entender.
+              &quot;A comunicação não se trata só de falar, é a arte de ver,
+              ouvir e fazer entender.&quot;
             </p>
           </div>
 
