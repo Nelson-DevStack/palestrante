@@ -5,7 +5,7 @@ import Container from "../UIComponents/Container";
 
 const FormSection = () => {
   return (
-    <section className="py-10 bg-[#212121]" id="participe">
+    <section className="py-10 bg-[#212121] z-20 relative" id="participe">
       <Container>
         <div className="grid gap-10 md:grid-cols-2 items-center">
           <div>

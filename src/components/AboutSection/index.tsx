@@ -7,7 +7,7 @@ import Container from "../UIComponents/Container";
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="mt-20">
+    <section id="sobre" className="pt-20 bg-slate-100">
       <Container>
         <div className="grid md:grid-cols-2 gap-10">
           <div>
@@ -22,7 +22,7 @@ const AboutSection = () => {
             </picture>
           </div>
 
-          <div className="max-w-lg mx-auto md:mx-0">
+          <div className="max-w-lg mx-auto md:mx-0 relative z-20">
             <h2 className="text-4xl font-medium text-gray-800 text-center md:text-left">
               Quem é Marcos Oliveira, o palestrante?
             </h2>

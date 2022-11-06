@@ -60,7 +60,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`bg-transparent z-20 fixed w-full h-20 transition duration-300 border-b border-transparent ${
+      className={`bg-transparent z-50 fixed w-full h-20 transition duration-300 border-b border-transparent ${
         scrolled
           ? "bg-slate-50 shadow-md border-gray-200 md:!bg-slate-50"
           : "bg-transparent md:!bg-transparent"

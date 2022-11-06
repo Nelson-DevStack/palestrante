@@ -21,7 +21,7 @@ const TestimonialCard: React.FC<Testimonial> = ({
   text,
 }) => {
   return (
-    <div className="border border-gray-400 rounded-md transition duration-200 hover:shadow-xl">
+    <div className="border border-gray-300 rounded-md transition duration-300 bg-white z-10 shadow-md hover:shadow-[rgba(50,50,93,0.25)_0px_50px_100px_-20px,_rgba(0,0,0,0.3)_0px_30px_60px_-30px]">
       <div className="p-8">
         <img
           src={image}
@@ -57,16 +57,16 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-20 relative" id="depoimentos">
+    <section className="py-20 relative bg-slate-100" id="depoimentos">
       <img
         src={abstractPattern}
         alt="Ilustração"
-        className="absolute -z-10 -left-24 -top-12 md:-left-[350px] md:-mt-56 md:top-0 opacity-60"
+        className="absolute -left-24 -top-12 md:-left-[350px] md:-mt-56 md:top-0 opacity-60"
       />
       <img
         src={roundedPattern}
         alt="Ilustração"
-        className="absolute -z-10 -right-[50vw] mt-24 md:-right-[550px] opacity-20 md:opacity-60"
+        className="absolute z-10 -right-[50vw] mt-24 md:-right-[550px] opacity-20 md:opacity-40"
       />
       <Container>
         <div>

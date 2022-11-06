@@ -7,11 +7,11 @@ import Container from "../UIComponents/Container";
 
 const Hero = () => {
   return (
-    <section className="relative" id="home">
+    <section className="relative bg-slate-100" id="home">
       <img
         src={blurPattern}
         alt="Asset"
-        className="absolute -z-10 -right-52 opacity-60 -top-48 max-w-[900px] md:max-w-[800px] lg:max-w-6xl w-full"
+        className="absolute z-10 -right-52 opacity-60 -top-48 xl:-right-80 max-w-[900px] md:max-w-[800px] lg:max-w-6xl w-full"
       />
       <Container className="py-28 lg:py-[12.5rem] lg:py-[11.4vw]">
         <div className="grid md:grid-cols-2 gap-10 items-center md:justify-between">
@@ -41,14 +41,14 @@ const Hero = () => {
               <img
                 src={heroImg}
                 alt="Palestra de Marcos Oliveira"
-                className="rounded-tl-3xl rounded-tr-md rounded-br-3xl rounded-bl-md"
+                className="rounded-tl-3xl rounded-tr-md rounded-br-3xl rounded-bl-md z-20 relative"
               />
             </picture>
 
             <img
               src={pattern}
               alt="Padrão Ilustrativo"
-              className="absolute max-w-[130px] -bottom-8 -left-14 -z-10 opacity-20"
+              className="absolute max-w-[130px] -bottom-8 -left-14 z-10 opacity-20"
             />
           </div>
         </div>

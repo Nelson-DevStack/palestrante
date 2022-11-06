@@ -38,7 +38,7 @@ const AdvantagesSection = () => {
   ];
 
   return (
-    <section className="py-10 z-10" id="vantagens">
+    <section className="py-10 z-10 bg-slate-100" id="vantagens">
       <Container className="bg-mainColorBg bg-cover py-20 z-10">
         <div className="flex flex-col justify-center md:items-center gap-5 md:grid md:grid-cols-2 md:gap-28">
           <div>
