@@ -10,7 +10,7 @@ import TestimonialsSection from "./components/Testimonials";
 
 function App() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Navbar />
       <Hero />
       <SocialProof />
