@@ -10,7 +10,7 @@ type SocialProofType = {
 
 const SocialCard: React.FC<SocialProofType> = ({ number, text }) => {
   return (
-    <div className="flex gap-2 items-center">
+    <div className="flex gap-2 items-center mr-6 md:mr-0">
       <div className="text-lg">
         <GoPlus className="text-mainColor" />
       </div>

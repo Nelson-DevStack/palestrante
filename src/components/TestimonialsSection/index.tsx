@@ -61,14 +61,14 @@ const TestimonialsSection = () => {
       <img
         src={abstractPattern}
         alt="Ilustração"
-        className="absolute -left-24 -top-12 md:-left-[350px] md:-mt-56 md:top-0 opacity-60"
+        className="absolute -left-24 -top-12 md:-left-[350px] md:-mt-56 md:top-0 opacity-40 md:opacity-60"
       />
       <img
         src={roundedPattern}
         alt="Ilustração"
         className="absolute z-10 -right-[50vw] mt-24 md:-right-[550px] opacity-20 md:opacity-30"
       />
-      <Container>
+      <Container className="relative z-20">
         <div>
           <div className="mb-24 text-center">
             <h2 className="text-4xl font-medium">
