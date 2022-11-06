@@ -61,18 +61,27 @@ const Navbar = () => {
   return (
     <header
       className={`bg-transparent z-20 fixed w-full h-20 transition duration-300 border-b border-transparent ${
-        scrolled ? "bg-slate-50 shadow-md border-gray-200" : "bg-transparent"
-      } ${isOpen ? "bg-mainColor/90 backdrop-blur" : ""}`}
+        scrolled
+          ? "bg-slate-50 shadow-md border-gray-200 md:!bg-slate-50"
+          : "bg-transparent md:!bg-transparent"
+      } ${isOpen ? "bg-[#212121]/90 backdrop-blur" : ""}`}
     >
       <Container className="h-full">
         <nav className="h-full flex items-center justify-between">
-          <a href="/" className="text-2xl text-gray-900 font-customSerif">
+          <a
+            href="/"
+            className={`text-2xl text-gray-900 md:!text-gray-900 font-customSerif ${
+              isOpen ? "!text-slate-50" : "text-gray-900"
+            }`}
+          >
             Marcos Oliveira
           </a>
 
           <button
             type="button"
-            className="text-gray-800 text-3xl md:hidden"
+            className={`text-gray-800 text-3xl md:hidden ${
+              isOpen ? "text-slate-50" : "text-gray-900"
+            }`}
             onClick={handleMenuClick}
           >
             <HiMenu />
@@ -84,7 +93,7 @@ const Navbar = () => {
               md:gap-6
               text-gray-800
               w-[90%]
-              bg-mainColor/90
+              bg-[#212121]/90
               backdrop-blur
               fixed
               flex
@@ -92,7 +101,7 @@ const Navbar = () => {
               top-20
               right-0
               p-4
-              h-full
+              h-screen
               transition
               duration-300
               
@@ -105,28 +114,15 @@ const Navbar = () => {
               md:translate-x-0
               ${isOpen ? "translate-x-0" : "translate-x-full"}`}
           >
-            {/* <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/">Vantagens</a>
-            </li>
-            <li>
-              <a href="/">Participar</a>
-            </li>
-            <li>
-              <a href="/">Depoimentos</a>
-            </li>
-            <li>
-              <a href="/">Sobre</a>
-            </li> */}
             {navbarLinks.map((link) => (
               <li
                 key={link.to}
                 className="transition duration-200 hover:scale-105 "
               >
                 <Link
-                  className="flex gap-2 transition duration-200 cursor-pointer border-b border-transparent hover:border-gray-800 font-gray-900"
+                  className={`flex gap-2 transition duration-200 cursor-pointer border-b border-transparent md:!text-gray-900 hover:border-gray-800 font-gray-900 ${
+                    isOpen ? "text-slate-50" : "text-gray-900"
+                  }`}
                   to={link.to}
                   offset={link.offset ? link.offset : 0}
                   smooth

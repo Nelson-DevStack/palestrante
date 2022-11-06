@@ -32,13 +32,13 @@ const Hero = () => {
             <img
               src={heroImg}
               alt="Palestra de Marcos Oliveira"
-              className="rounded-sm rounded-tl-2xl"
+              className="rounded-tl-3xl rounded-tr-md rounded-br-3xl rounded-bl-md"
             />
 
             <img
               src={pattern}
               alt="Padrão Ilustrativo"
-              className="absolute max-w-[130px] -bottom-8 -left-14 -z-10 opacity-20 md:opacity-30"
+              className="absolute max-w-[130px] -bottom-8 -left-14 -z-10 opacity-20"
             />
           </div>
         </div>
