@@ -14,7 +14,7 @@ const Hero = () => {
         className="absolute z-10 -right-52 opacity-60 -top-48 xl:-right-80 max-w-[900px] md:max-w-[800px] lg:max-w-6xl w-full"
       />
       <Container className="py-28 lg:py-[12.5rem] lg:py-[11.4vw]">
-        <div className="grid md:grid-cols-2 gap-10 items-center md:justify-between">
+        <div className="grid md:grid-cols-2 gap-10 items-center md:justify-between relative z-10">
           <div className="max-w-xl">
             <h1 className="text-3xl font-medium text-gray-900">
               Curso: Aprendendo a falar em público
