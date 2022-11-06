@@ -1,4 +1,5 @@
 import formImg from "../../assets/arte-da-oratoria.png";
+import formImgWebp from "../../assets/arte-da-oratoria.webp";
 import CTABtn from "../Button";
 import Container from "../UIComponents/Container";
 
@@ -45,11 +46,15 @@ const FormSection = () => {
           </div>
 
           <div>
-            <img
-              src={formImg}
-              alt="Livro a Arte da Oratória"
-              className="-ml-5 md:ml-0"
-            />
+            <picture>
+              <source srcSet={formImgWebp} type="image/webp" />
+              <source srcSet={formImg} type="image/jpeg" />
+              <img
+                src={formImg}
+                alt="Livro a Arte da Oratória"
+                className="-ml-5 md:ml-0"
+              />
+            </picture>
           </div>
         </div>
       </Container>

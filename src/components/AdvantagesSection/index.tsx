@@ -2,6 +2,7 @@ import React from "react";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 
 import advantageImg from "../../assets/meeting.jpg";
+import advantageImgWebp from "../../assets/meeting.webp";
 import CTABtn from "../Button";
 import Container from "../UIComponents/Container";
 
@@ -41,11 +42,15 @@ const AdvantagesSection = () => {
       <Container className="bg-mainColorBg bg-cover py-20 z-10">
         <div className="flex flex-col justify-center md:items-center gap-5 md:grid md:grid-cols-2 md:gap-28">
           <div>
-            <img
-              src={advantageImg}
-              alt="Vantagens do Curso"
-              className="rounded-2xl"
-            />
+            <picture>
+              <source srcSet={advantageImgWebp} type="image/webp" />
+              <source srcSet={advantageImg} type="image/jpeg" />
+              <img
+                src={advantageImg}
+                alt="Vantagens do Curso"
+                className="rounded-2xl"
+              />
+            </picture>
           </div>
 
           <div>

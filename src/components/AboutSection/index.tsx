@@ -1,6 +1,7 @@
 import { ImQuotesLeft } from "react-icons/im";
 
 import aboutImg from "../../assets/palestrante-bg.png";
+import aboutImgWebp from "../../assets/palestrante-bg.webp";
 import CTABtn from "../Button";
 import Container from "../UIComponents/Container";
 
@@ -10,12 +11,15 @@ const AboutSection = () => {
       <Container>
         <div className="grid md:grid-cols-2 gap-10">
           <div>
-            {/* <p>Image Area</p> */}
-            <img
-              src={aboutImg}
-              alt="Palestrante Marcos Oliveira"
-              className="w-full max-w-lg md:max-w-sm lg:max-w-lg mx-auto"
-            />
+            <picture>
+              <source srcSet={aboutImgWebp} type="image/webp" />
+              <source srcSet={aboutImg} type="image/jpeg" />
+              <img
+                src={aboutImg}
+                alt="Palestrante Marcos Oliveira"
+                className="w-full max-w-lg md:max-w-sm lg:max-w-lg mx-auto"
+              />
+            </picture>
           </div>
 
           <div className="max-w-lg mx-auto md:mx-0">

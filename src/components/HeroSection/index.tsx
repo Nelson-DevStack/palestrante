@@ -1,4 +1,5 @@
 import heroImg from "../../assets/lecture.jpg";
+import heroImgWebp from "../../assets/lecture.webp";
 import pattern from "../../assets/pattern.svg";
 import blurPattern from "../../assets/rounded-abstract-pattern.svg";
 import CTABtn from "../Button";
@@ -29,11 +30,20 @@ const Hero = () => {
           </div>
 
           <div className="relative">
-            <img
+            {/* <img
               src={heroImg}
               alt="Palestra de Marcos Oliveira"
               className="rounded-tl-3xl rounded-tr-md rounded-br-3xl rounded-bl-md"
-            />
+            /> */}
+            <picture>
+              <source srcSet={heroImgWebp} type="image/webp" />
+              <source srcSet={heroImg} type="image/jpeg" />
+              <img
+                src={heroImg}
+                alt="Palestra de Marcos Oliveira"
+                className="rounded-tl-3xl rounded-tr-md rounded-br-3xl rounded-bl-md"
+              />
+            </picture>
 
             <img
               src={pattern}
