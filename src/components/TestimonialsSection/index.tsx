@@ -1,4 +1,5 @@
 import abstractPattern from "../../assets/blur-abstract-pattern.svg";
+import profilePic2 from "../../assets/profile-pic-2.jpg";
 import profilePic from "../../assets/profile-pic.jpg";
 import roundedPattern from "../../assets/rounded-abstract-pattern.svg";
 import CTABtn from "../Button";
@@ -47,11 +48,11 @@ const TestimonialsSection = () => {
       text: "Nunca tive coragem de falar em público antes. Tudo mudou quando decidi assistir a palestra do Marcos Oliveira. Percebi que toda pessoa tem dentro de si o poder de fazer a diferença através da oratória.",
     },
     {
-      image: profilePic,
-      alt: "Márcio Correia, Empreendedor",
-      name: "Márcio Correia",
-      job: "Empreendedor",
-      text: "Nunca tive coragem de falar em público antes. Tudo mudou quando decidi assistir a palestra do Marcos Oliveira. Percebi que toda pessoa tem dentro de si o poder de fazer a diferença através da oratória.",
+      image: profilePic2,
+      alt: "Marilia Correia, Empreendedor",
+      name: "Marilia Correia",
+      job: "Empreendedora",
+      text: "Sempre me senti pra baixo por não conseguir me expressar para as pessoas. Depois do curso, realizei meu sonho de dar palestras e apresentar meus projetos.",
     },
   ];
 

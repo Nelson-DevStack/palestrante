@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { GoPlus } from "react-icons/go";
 
-import blurPattern from "../../assets/blur-pattern-2.svg";
+import blurPattern from "../../assets/blur-pattern.svg";
 import Container from "../UIComponents/Container";
 
 type SocialProofType = {
