@@ -10,7 +10,7 @@ module.exports = {
         mainColorBg: "url('./src/assets/bg3.svg')",
       },
       fontFamily: {
-        customSerif: ["Bodoni Nova"],
+        customSerif: ["Bodoni Nova", "serif"],
       },
     },
   },

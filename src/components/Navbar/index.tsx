@@ -117,7 +117,7 @@ const Navbar = () => {
             {navbarLinks.map((link) => (
               <li
                 key={link.to}
-                className="transition duration-200 hover:scale-105 "
+                className="transition duration-200 hover:scale-105"
               >
                 <Link
                   className={`flex gap-2 transition duration-200 cursor-pointer border-b border-transparent md:!text-gray-900 hover:border-gray-800 font-gray-900 ${
@@ -128,6 +128,7 @@ const Navbar = () => {
                   smooth
                   spy
                   duration={600}
+                  onClick={() => setIsOpen(false)}
                 >
                   {link.label}
                 </Link>
