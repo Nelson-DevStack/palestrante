@@ -42,6 +42,10 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
+          <p className="mt-12 text-center mx-auto text-sm text-slate-50">
+            Desenvolvido por Nelson Carvalho - 2022
+          </p>
         </div>
       </Container>
     </footer>
