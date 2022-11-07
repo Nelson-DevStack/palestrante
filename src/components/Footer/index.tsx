@@ -43,7 +43,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <p className="mt-12 text-center mx-auto text-sm text-slate-50">
+          <p className="mt-12 text-center mx-auto text-slate-50">
             Desenvolvido por Nelson Carvalho - 2022
           </p>
         </div>
