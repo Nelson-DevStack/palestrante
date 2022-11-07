@@ -3,7 +3,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/Nelson-DevStack/palestrante)
 ![GitHub forks](https://img.shields.io/github/forks/Nelson-DevStack/palestrante)
 
-📎 &nbsp; **Site:**
+📎 &nbsp; **Site:** [palestrante.vercel.app](https://palestrante.vercel.app)
 
 <img src="page_screenshot.jpg" alt="Imagem do Projeto">
 
